@@ -1,0 +1,26 @@
+#guide .guide-sidebar h3 {
+    color: #1b75bc;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+#guide .guide-sidebar ul.menu {
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+#guide .guide-sidebar ul.menu a
+{
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+#guide .guide-sidebar ul.menu a:hover,
+#guide .guide-sidebar ul.menu a:active {
+    color: #49a32f;
+    text-decoration: underline;
+}
+#guide .guide-sidebar ul.menu .current-menu-item a
+{
+    font-weight: bold;
+}
