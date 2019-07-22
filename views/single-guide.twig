@@ -1,16 +1,22 @@
 <div class="row" id="guide">
-    <div class="col-sm-12 col-md-4 guide-sidebar">
-        <h3>{{ parent.title }}</h3>
-        <ul class="menu">
-            {% for child in parent.children %}
-                <li {% if child.id == post.id %}class="current-menu-item"{% endif %}><a href="{{ child.link }}">{{ child.title }}</a></li>
-            {% endfor %}
-        </ul>
+    <div class="col-sm-12 col-md-2">
+        <aside class="guide-sidebar">
+            <h3>{{ parent.title }} Guides</h3>
+            <nav>
+                <ul class="menu">
+                    {% for child in parent.children %}
+                        <li {% if child.id == post.id %}class="current-menu-item"{% endif %}><a href="{{ child.link }}">{{ child.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </aside>
     </div>
+    <div class="col-md-1"></div>
     <div class="col-sm-12 col-md-8 guide-main">
         <h1>{{ post.title }}</h1>
         <div class="content">
             {{ post.content }}
         </div>
     </div>
+    <div class="col-md-1"></div>
 </div>
